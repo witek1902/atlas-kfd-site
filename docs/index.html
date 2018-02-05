@@ -437,7 +437,7 @@
       jQuery(document).ready(function($) {
         "use strict";
         jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({social_tools:false});
-		$(".navbar-header").find("a").click(function(e) {
+		$(".navigation").find("a").click(function(e) {
 			e.preventDefault();
 			var section = $(this).attr("href");
 			$("html, body").animate({
