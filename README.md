@@ -1,2 +1,2 @@
-# atlas-kfd-site
-Atlas ćwiczeń KFD.PL - landing page
+# Atlas ćwiczeń KFD.PL - landing page
+
