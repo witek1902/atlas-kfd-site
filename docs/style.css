@@ -69,7 +69,7 @@ ul li {
 	content: "";
 	width: 150px;
 	height: 1px;
-	background-color: #777;
+	background-color: #0099FF;
 	top: 50%;
 	left: 0;
 }
@@ -78,7 +78,7 @@ ul li {
 	content: "";
 	width: 150px;
 	height: 1px;
-	background-color: #777;
+	background-color: #0099FF;
 	top: 50%;
 	right: 0;
 }
@@ -201,9 +201,22 @@ header {
 	background-color: #fff;
 	color: #222;
 }
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: white !important;
+}
 
+.navbar-default .navbar-toggle {
+	background-color: white !important;
+}
 
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #0099FF !important;
+}
 
+.top-description {
+	background: black;
+	opacity: 0.9;
+}
 
 /* =========================================
    4. Section Menu                 
@@ -248,7 +261,7 @@ header {
 .navigation .navbar-default .navbar-nav>.active>a:hover,
 .navigation .navbar-default .navbar-nav>.active>a:focus {
  	background: none;
-	/*color: #0099FF;*/
+	color: white;
 	font-weight: bold;
  }
 .navigation .btn-default:hover,
@@ -257,61 +270,6 @@ header {
 .navigation .btn-default.active {
 	border-color: transparent;
 }
-
-
-
-/* =========================================
-   5. Section Features                 
-========================================= */
-.features .featured-item-img {
-	width: 252px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 50px;
-}
-.features .header h4 {
-	font-size: 24px;
-	margin-bottom: 30px;
-	font-weight: 300;
-}
-.featured-item .icon-style {
-	width: 60px;
-	height: 60px;
-	border-radius: 100%;
-	border: 1px solid #0099FF;
-	text-align: center;
-	padding: 15px 0;
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
-}
-.featured-item .icon i {
-	font-size: 30px;
-	margin-top: 0px;
-	color: #0099FF;
-}
-.featured-item h3 {
-	margin-top: 10px;
-	margin-bottom: 20px;
-	color: #fff;
-	font-weight: 400;
-}
-.featured-item p {
-	margin-bottom: 50px;
-	letter-spacing: 0.5px;
-}
-.featured-item .meta-text {
-	margin-left: 80px;
-}
-.featured-item .icon {
-	width: 60px;
-	height: 60px;
-	float: left;
-}
-.featured-item:hover .icon-style {
-	border-radius: 0;
-}
-
 
 
 /* =========================================
@@ -409,9 +367,9 @@ header {
    7. Section Description                 
 ========================================= */
 .description .app-image {
-	max-width: 441px;
+	max-width: 350px;
 	margin: auto;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 .description .content h4 {
 	font-size: 28px;
@@ -453,6 +411,7 @@ header {
 }
 .description .content .list-item li{
 	margin-bottom: 15px;
+	font-size: 22px;
 }
 /* =========================================
    8. Section Testimonial                 
@@ -469,6 +428,7 @@ header {
 	margin: auto;
 	text-align: center;
 	margin-bottom: 70px;
+	margin-top: 30px;
 }
 .testimonial .testimonial-slide .image {
 	width: 100px;
@@ -483,6 +443,7 @@ header {
 	position: relative;
 	padding:0 50px;
 	margin-bottom: 50px;
+	font-size: 24px;
 }
 .testimonial .testimonial-slide .content p:before {
 	position: absolute;
@@ -499,6 +460,10 @@ header {
 	font-size: 30px;
 	bottom: 0;
 	right: 0;
+}
+
+.header-white {
+	color: white;
 }
 
 /* =========================================
@@ -590,162 +555,6 @@ header {
 }
 
 /* =========================================
-   10. Section Price                 
-========================================= */
-.price .price-table {
-	padding:0 30px;
-	position: relative;
-	max-width: 360px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 80px;
-	background-color: #fff;
-	margin-top:150px;
-	color: #222;
-}
-.price .header .underline {
-	margin-bottom: 10px;
-}
-.price .price-list {
-	text-align: center;
-}
-.price .price-list i {
-	margin-right: 20px;
-}
-.price .price-list h2 {
-	margin-top: 100px;
-	margin-bottom: 30px;
-	display: inline-block;
-}
-.price .price-list p {
-	margin-bottom: 30px;
-	text-align: left;
-}
-.price .price-list ul {
-	padding-left: 10px;
-	padding-bottom: 50px;
-	text-align: left;
-}
-.price .price-list ul li {
-	list-style: none;
-	margin-bottom: 15px;
-}
-.price .price-list ul li i {
-	width: 24px;
-	height: 24px;
-	border-radius: 100%;
-	text-align: center;
-	padding: 4px 0;
-	font-size: 14px;
-}
-.price .price-list ul li i.fa-check {
-	margin-right: 20px;
-	border: 1px solid #0099FF;
-	color: #0099FF;
-}
-.price .price-list ul li i.fa-times {
-	margin-right: 20px;
-	border:1px solid #e74c3c;
-	padding-right: 1px;
-	color: #e74c3c;
-}
-.price .price-list .rate {
-	background: #0099FF;
-	color: #fff;
-	font-size: 40px;
-	text-align: center;
-	padding: 60px 0;
-	border-radius: 100%;
-	width: 150px;
-	height: 150px;
-	position: absolute;
-	top: -75px;
-	left: 50%;
-	margin-left: -75px;
-	font-weight: 700;
-}
-.price .price-list .buy-now {
-	border: 1px solid transparent;
-	background: #0099FF;
-	padding: 10px 30px;
-	border-radius: 0;
-	font-size: 20px;
-	margin-bottom: 30px;
-	color: #fff;
-	position: absolute;
-	left: 50%;
-	bottom: -55px;
-	margin-left: -75px;
-}
-.price .featured-price .rate,
-.price .featured-price .buy-now {
-	background: #e74c3c;
-}
-
-/* =========================================
-   11. Section Subscribe                 
-========================================= */
-.subscribe {
-	text-align: center;
-}
-.subscribe .subscribe-header {
-	width: 70%;
-	margin: auto;
-}
-.subscribe .subscribe-header p {
-	margin-bottom: 30px;
-}
-.subscribe .subscribe-form input {
-	width: 100%;
-	margin: auto;
-	height: 60px;
-	border-radius: 0;
-	background-color: transparent;
-}
-.input-group-addon {
-	padding: 0 !important;
-	font-size: 14px;
-	font-weight: 400;
-	color: #555;
-	text-align: center;
-	background-color: none;
-	border: 1px solid #ccc;
-	border-radius: 0px;
-	height: 60px;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
-.input-group-addon:hover {
-	background-color: #0099FF;
-	border-color: #0099FF;
-	color: #fff;
-}
-
-.input-group-addon button {
-	background: transparent;
-	border: none;
-	margin-bottom: 0px;
-	padding: 10px 70px;
-	font-size: 20px;
-	font-weight: 400;
-	outline: none;
-}
-.subscribe .social {
-	margin: auto;
-	display: table;
-	margin-bottom: 50px;
-}
-.subscribe .social ul {
-	padding:30px 0;
-}
-.subscribe .social li {
-	float: left;
-	list-style: none;
-	margin-right: 10px;
-}
-
-/* =========================================
    12. Section Download                 
 ========================================= */
 #download {
@@ -754,10 +563,6 @@ header {
 }
 .download {
 	background-image: url(images/pattern5.png);
-}
-.download .underline:before,
-.download .underline:after {
-	background-color: #BBB;
 }
 .download .download-area img {
 	width: 30px;
@@ -795,47 +600,107 @@ header {
 	font-weight: 300;
 }
 
-/* =========================================
-   13. Section Footer                 
-========================================= */
-
-.footer {
-	text-align: center;
-}
-.footer .contact input {
-	width: 100%;
-	height: 50px;
-	border-radius: 0;
-	background-color: transparent;
-	margin-bottom: 30px;
-}
-.footer h1 {
-	margin-bottom: 60px;
-}
-.footer .contact textarea {
-	width: 100%;
-	border-radius: 0;
-	background-color: transparent;
-	margin-bottom: 10px;
-	outline: 0;
-	padding: 10px;
-	border: 1px solid #ccc;
-	min-height: 210px;
-}
-.footer .contact .contact-submit {
-	padding: 10px 30px;
-	font-size: 20px;
-	font-weight: 400;
-	margin-bottom: 50px;
-}
-.footer .contact .contact-submit i {
-	margin-right: 10px;
+.download-padding {
+	padding-top: 150px;
+	padding-bottom: 130px;
 }
 
+.download p {
+	font-size: 28px;
+}
 /* =========================================
    14. Section Copyright                 
 ========================================= */
 .copyright {
 	text-align: center;
 	padding: 10px 0px 0px 0px;
+}
+
+/* =========================================
+/* From color.css
+========================================= */
+
+body {
+    background-color: #fff;
+	color: #222;
+	/*font-family: "Open-Sans", Arial, sans-serif; */
+}
+.dark-bg {
+	background-color: #F2F3FD;
+}
+h1 {
+	color: #111;
+}
+
+.underline:before,
+.underline:after {
+	background-color: #0099FF;
+}
+.custom-btn {
+	color: rgb(24, 163, 212);
+	border: 1px solid rgb(24, 163, 212);
+}
+.top .content {
+	color: #fff;
+}
+.top .content h1 {
+	color: #fff;
+}
+.top .content .button .custom-btn {
+	color: #fff;
+	border-color: #fff;
+}
+
+.navbar-default {
+	background-color: rgb(24, 163, 212);
+}
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.active>a,
+ .navbar-default .navbar-nav>.active>a:hover,
+ .navbar-default .navbar-nav>.active>a:focus {
+ 	background: none;
+ }
+.featured-item .icon i {
+	color: rgb(24, 163, 212);
+}
+.featured-item h3 {
+	color: #2E2E2E;
+}
+.description .content .list-item li i {
+	color: rgb(24, 163, 212);
+}
+.testimonial .testimonial-slide .content {
+	color: #f1f1f1;
+}
+.team .member .details p {
+	color: #fff;
+}
+.price .price-table {
+	padding:0 30px;
+}
+
+.price .price-list ul li i.fa-check {
+	border: 1px solid rgb(24, 163, 212);
+	color: rgb(24, 163, 212);
+}
+.price .price-list ul li i.fa-times {
+	border:1px solid #e74c3c;
+	color: #e74c3c;
+}
+.download {
+	color: #fff;
+}
+.download .header h1 {
+	color: #fff;
+}
+.download .custom-btn {
+	color: #fff;
+	border: 2px solid #fff;
+}
+.input-group-addon {
+	color: #555;
+	border: 1px solid #ccc;
 }
