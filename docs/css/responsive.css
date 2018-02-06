@@ -49,6 +49,12 @@
 	#download {
 		background: none;
 	}
+	header {
+		background: black;
+	}
+	#testimonial {
+		background: none;
+	}
 }
 @media screen and (max-width: 640px){
 	h1 {
