@@ -20,21 +20,11 @@ $(document).ready(function() {
 
   $("a[data-rel^='prettyPhoto']").prettyPhoto({social_tools:false});
 
-  $(".navigation a, .btn").click(function(e) {
+  $(".navigation a, .btn:not(.external)").click(function(e) {
     e.preventDefault();
     var section = $(this).attr("href");
     $("html, body").animate({
       scrollTop: $(section).offset().top - 30
     });
   });
-})
-
-jQuery(function( $ ){
-  $('#download-app1').localScroll({
-    duration:1200
-  });
-    $('#download-app2').localScroll({
-    duration:1000
-  });
 });
-
